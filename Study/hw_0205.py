@@ -106,13 +106,8 @@ T = int(input())
 for test_case in range(1, T + 1):
     N = int(input())
     high_arr = list(map(int, input().split()))
-    count = 0
     # 각 건물의 높이
     for i in range(2, N-2):
         max_high_l = max(high_arr[i-2], high_arr[i-1])
         max_high_r = max(high_arr[i+1], high_arr[i+2])
-        royal = max(max_high_r, max_high_l)
-
-        if high_arr[i] > royal:
-            count += high_arr[i] - royal
-    print(f'#{test_case} {count}')
+        if
